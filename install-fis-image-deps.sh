@@ -47,6 +47,7 @@ NPM_MODULES_PATH="$(npm prefix -g)/lib/node_modules"
 
 NAME=$1
 [ "$NAME" = "" ] && NAME="fis"
+[ "$NAME" != "fis" ] && NAME="${NAME}/node_modules/fis"
 
 NEED_BUILD_MODULES=(
     "node_modules/fis-optimizer-png-compressor/node_modules/node-pngcrush"
